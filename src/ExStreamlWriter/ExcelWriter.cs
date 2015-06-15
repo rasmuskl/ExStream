@@ -4,7 +4,7 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace StreamingExcelWriter
+namespace ExStreamWriter
 {
     public class ExcelWriter : IDisposable
     {

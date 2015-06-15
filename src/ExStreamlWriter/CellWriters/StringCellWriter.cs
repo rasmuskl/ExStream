@@ -1,7 +1,7 @@
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace StreamingExcelWriter.CellWriters
+namespace ExStreamWriter.CellWriters
 {
     public class StringCellWriter : ICellWriter
     {

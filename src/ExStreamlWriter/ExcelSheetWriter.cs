@@ -3,7 +3,7 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace StreamingExcelWriter
+namespace ExStreamWriter
 {
     public class ExcelSheetWriter : IDisposable
     {
@@ -56,7 +56,7 @@ namespace StreamingExcelWriter
 
             if (cellWriter == null)
             {
-                throw new Exception($"Unable to write cell with value type: {value.GetType()}");
+                throw new Exception("Unable to write cell with value type: {value.GetType()}");
             }
 
             cellWriter.WriteCell(_writer, value);

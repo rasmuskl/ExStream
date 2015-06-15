@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingExcelWriter", "StreamingExcelWriter\StreamingExcelWriter.csproj", "{81F6D388-4C8C-40A0-B5B9-9B962062E73E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStreamWriter", "ExStreamlWriter\ExStreamWriter.csproj", "{81F6D388-4C8C-40A0-B5B9-9B962062E73E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingExcelWriter.Tests", "StreamingExcelWriter.Tests\StreamingExcelWriter.Tests.csproj", "{7CCA8126-C7BD-4138-9A78-77B644A90186}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStreamWriter.Tests", "ExStreamlWriter.Tests\ExStreamWriter.Tests.csproj", "{7CCA8126-C7BD-4138-9A78-77B644A90186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

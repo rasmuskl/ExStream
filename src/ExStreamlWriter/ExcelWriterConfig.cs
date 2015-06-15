@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using StreamingExcelWriter.CellWriters;
+using ExStreamWriter.CellWriters;
 
-namespace StreamingExcelWriter
+namespace ExStreamWriter
 {
     public class ExcelWriterConfig
     {

@@ -7,10 +7,11 @@
     <ProjectGuid>{81F6D388-4C8C-40A0-B5B9-9B962062E73E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StreamingExcelWriter</RootNamespace>
-    <AssemblyName>StreamingExcelWriter</AssemblyName>
+    <RootNamespace>ExStreamWriter</RootNamespace>
+    <AssemblyName>ExStreamWriter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

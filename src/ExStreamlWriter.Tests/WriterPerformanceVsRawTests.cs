@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 using NUnit.Framework;
 
-namespace StreamingExcelWriter.Tests
+namespace ExStreamWriter.Tests
 {
     public class WriterPerformanceVsRawTests
     {

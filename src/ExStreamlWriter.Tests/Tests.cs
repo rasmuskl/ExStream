@@ -2,7 +2,7 @@
 using System.IO;
 using NUnit.Framework;
 
-namespace StreamingExcelWriter.Tests
+namespace ExStreamWriter.Tests
 {
     [TestFixture]
     public class Tests

@@ -1,6 +1,6 @@
 ﻿using DocumentFormat.OpenXml;
 
-namespace StreamingExcelWriter
+namespace ExStreamWriter
 {
     public interface ICellWriter
     {
