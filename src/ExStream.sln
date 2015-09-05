@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStreamWriter", "ExStreamlWriter\ExStreamWriter.csproj", "{81F6D388-4C8C-40A0-B5B9-9B962062E73E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStream", "ExStream\ExStream.csproj", "{81F6D388-4C8C-40A0-B5B9-9B962062E73E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStream.Tests", "ExStreamlWriter.Tests\ExStream.Tests.csproj", "{7CCA8126-C7BD-4138-9A78-77B644A90186}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStream.Tests", "ExStream.Tests\ExStream.Tests.csproj", "{7CCA8126-C7BD-4138-9A78-77B644A90186}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStreamWriter.Tests.Playground", "ExStreamWriter.Tests.Playground\ExStreamWriter.Tests.Playground.csproj", "{5E54BE7E-BE2C-404F-AB4A-9C97082B5C6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExStream.Tests.Playground", "ExStream.Tests.Playground\ExStream.Tests.Playground.csproj", "{5E54BE7E-BE2C-404F-AB4A-9C97082B5C6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

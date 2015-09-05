@@ -4,26 +4,26 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace ExStreamWriter
+namespace ExStream
 {
-    public class ExcelWriter : IDisposable
+    public class ExStreamWriter : IDisposable
     {
         readonly SpreadsheetDocument _document;
-        readonly ExcelWriterConfig _config;
+        readonly ExStreamWriterConfig _config;
 
         uint _nextSheetId = 1;
         uint _nextNumberFormatId = 165;
 
-        public ExcelWriter(string xlsxFile, ExcelWriterConfig config = null)
+        public ExStreamWriter(string xlsxFile, ExStreamWriterConfig config = null)
         {
-            _config = config ?? ExcelWriterConfig.Current;
+            _config = config ?? ExStreamWriterConfig.Current;
             _document = SpreadsheetDocument.Create(xlsxFile, SpreadsheetDocumentType.Workbook);
             InitialDocumentStructure();
         }
 
-        public ExcelWriter(Stream stream, ExcelWriterConfig config = null)
+        public ExStreamWriter(Stream stream, ExStreamWriterConfig config = null)
         {
-            _config = config ?? ExcelWriterConfig.Current;
+            _config = config ?? ExStreamWriterConfig.Current;
             _document = SpreadsheetDocument.Create(stream, SpreadsheetDocumentType.Workbook);
             InitialDocumentStructure();
         }
@@ -125,7 +125,7 @@ namespace ExStreamWriter
             stylePart.Stylesheet.Borders.AppendChild(border);
         }
 
-        public ExcelSheetWriter WriteSheet(string sheetName)
+        public ExStreamSheetWriter WriteSheet(string sheetName)
         {
             var worksheetPart = _document.WorkbookPart.AddNewPart<WorksheetPart>();
 
@@ -139,7 +139,7 @@ namespace ExStreamWriter
             _nextSheetId += 1;
             _document.WorkbookPart.Workbook.Sheets.AppendChild(sheet);
 
-            return new ExcelSheetWriter(_config, worksheetPart);
+            return new ExStreamSheetWriter(_config, worksheetPart);
         }
 
         public void Dispose()

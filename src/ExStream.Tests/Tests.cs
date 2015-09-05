@@ -2,7 +2,7 @@
 using System.IO;
 using NUnit.Framework;
 
-namespace ExStreamWriter.Tests
+namespace ExStream.Tests
 {
     [TestFixture]
     public class Tests
@@ -10,7 +10,7 @@ namespace ExStreamWriter.Tests
         [Test]
         public void CanWriteRows()
         {
-            using (var writer = new ExcelWriter("my-file-rows.xlsx"))
+            using (var writer = new ExStream.ExStreamWriter("my-file-rows.xlsx"))
             {
                 using (var sheet = writer.WriteSheet("MySheet"))
                 {
@@ -25,7 +25,7 @@ namespace ExStreamWriter.Tests
         [Test]
         public void CanWriteCells()
         {
-            using (var writer = new ExcelWriter("my-file-cells.xlsx"))
+            using (var writer = new ExStream.ExStreamWriter("my-file-cells.xlsx"))
             {
                 using (var sheet = writer.WriteSheet("MySheet"))
                 {
@@ -47,7 +47,7 @@ namespace ExStreamWriter.Tests
         {
             using (var stream = new MemoryStream())
             {
-                using (var writer = new ExcelWriter(stream))
+                using (var writer = new ExStream.ExStreamWriter(stream))
                 {
                     using (var sheet = writer.WriteSheet("MySheet"))
                     {

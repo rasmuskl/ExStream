@@ -3,7 +3,7 @@ using System.Globalization;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace ExStreamWriter.CellWriters
+namespace ExStream.CellWriters
 {
     public class DateTimeCellWriter : ICellWriter
     {

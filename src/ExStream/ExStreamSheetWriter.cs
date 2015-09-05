@@ -3,16 +3,16 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace ExStreamWriter
+namespace ExStream
 {
-    public class ExcelSheetWriter : IDisposable
+    public class ExStreamSheetWriter : IDisposable
     {
-        readonly ExcelWriterConfig _config;
+        readonly ExStreamWriterConfig _config;
         readonly OpenXmlWriter _writer;
         uint _nextRowNumber = 1;
         bool _inRow = false;
 
-        public ExcelSheetWriter(ExcelWriterConfig config, WorksheetPart worksheetPart)
+        public ExStreamSheetWriter(ExStreamWriterConfig config, WorksheetPart worksheetPart)
         {
             _config = config;
             _writer = OpenXmlWriter.Create(worksheetPart);

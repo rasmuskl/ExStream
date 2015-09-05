@@ -7,9 +7,9 @@ using System.Xml;
 using NUnit.Framework;
 using OfficeOpenXml;
 
-namespace ExStreamWriter.Tests.Playground
+namespace ExStream.Tests.Playground
 {
-    public class WriterPerformanceVsRawTests
+    public class SimplePerformanceTests
     {
         const int RowCount = 10000;
         const int ColumnCount = 100;
@@ -23,7 +23,7 @@ namespace ExStreamWriter.Tests.Playground
         {
             SimpleBenchmark(() =>
             {
-                using (var writer = new ExcelWriter("my-file-raw-test.xlsx"))
+                using (var writer = new ExStreamWriter("my-file-raw-test.xlsx"))
                 {
                     using (var sheet = writer.WriteSheet("My Sheet"))
                     {

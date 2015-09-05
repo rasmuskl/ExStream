@@ -1,6 +1,6 @@
 ﻿using DocumentFormat.OpenXml;
 
-namespace ExStreamWriter
+namespace ExStream
 {
     public interface ICellWriter
     {

@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using ExStreamWriter.CellWriters;
+using ExStream.CellWriters;
 
-namespace ExStreamWriter
+namespace ExStream
 {
-    public class ExcelWriterConfig
+    public class ExStreamWriterConfig
     {
-        public static readonly ExcelWriterConfig Current = new ExcelWriterConfig();
+        public static readonly ExStreamWriterConfig Current = new ExStreamWriterConfig();
 
         readonly Dictionary<Type, ICellWriter> _cellWriters = new Dictionary<Type, ICellWriter>();
 
-        public ExcelWriterConfig()
+        public ExStreamWriterConfig()
         {
             AddCellWriter(typeof(string), new StringCellWriter());
             AddCellWriter(typeof(Guid), new StringCellWriter());
